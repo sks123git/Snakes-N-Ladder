@@ -15,18 +15,23 @@ public static int BITTEN=0, CLIMBED=0; //Declaring bitten times and climbed time
             if(pos1==3){
                 pos1=gameBoard[3];
                 CLIMBED++;
+                System.out.println("Player 1 climbed ladder to " + pos1);
             } else if (pos1==22) {
                 pos1=gameBoard[22];
                 CLIMBED++;
+                System.out.println("Player 1 climbed ladder to " + pos1);
             } else if (pos1==33) {
                 pos1=gameBoard[33];
                 BITTEN++;
+                System.out.println("Player 1 bitten by snake and came to " + pos1);
             } else if (pos1==47) {
                 pos1=gameBoard[47];
                 BITTEN++;
+                System.out.println("Player 1 bitten by snake and came to " + pos1);
             } else {
 
-            pos1 += rollVal;}
+            pos1 += rollVal;
+                System.out.println("Player 1 moved to " + pos1);}
         }
         CHANCE=1;  // Now player 2 chance
 
@@ -38,17 +43,22 @@ public static int BITTEN=0, CLIMBED=0; //Declaring bitten times and climbed time
             if (pos2 == 3) {
                 pos2 = gameBoard[3];
                 CLIMBED++;
+                System.out.println("Player 2 climbed ladder to " + pos2);
             } else if (pos2 == 22) {
                 pos2 = gameBoard[22];
                 CLIMBED++;
+                System.out.println("Player 2 climbed ladder to " + pos2);
             } else if (pos2 == 33) {
                 pos2 = gameBoard[33];
                 BITTEN++;
+                System.out.println("Player 2 bitten by snake and came to " + pos2);
             } else if (pos2 == 47) {
                 pos2 = gameBoard[47];
                 BITTEN++;
+                System.out.println("Player 2 bitten by snake and came to " + pos2);
             } else {
                 pos2 += rollVal;
+                System.out.println("Player 2 moved to " + pos2);
             }
         }        CHANCE=0; // Now player 1 chance
 
